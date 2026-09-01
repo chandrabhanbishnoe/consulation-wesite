@@ -672,7 +672,7 @@
 }
 
 .menu-dropdown {
-  display: block;
+  display: none ;
   position: absolute;
   right: 0;
   top: 45px;
@@ -817,17 +817,9 @@ function toggleMenu() {
   const menu = document.getElementById("mainMenu");
   menu.classList.toggle("show");
 }
-
+   
 function goToProducts() {
-  const products = document.getElementById("products");
-
-  if (products) {
-    products.scrollIntoView({
-      behavior: "smooth"
-    });
-  }
-
-  document.getElementById("mainMenu").classList.remove("show");
+  window.location.href = "products.html";
 }
 
 function showComingSoon(name) {
